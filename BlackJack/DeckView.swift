@@ -37,19 +37,19 @@ struct Deck {
 struct DeckView: View {
     let deck = Deck()
     var body: some View {
-        NavigationView {
-            List {
-                ForEach(self.deck.cards) { card in
-                    NavigationLink(destination: CardView(card: card)) {
-                        HStack {
-                            card.suit.sf
-                            Spacer()
-                            Text("\(card.value.cardValue)")
-                        }
+        List {
+            ForEach(self.deck.cards) { card in
+                NavigationLink(destination: CardView(card: card)) {
+                    HStack {
+                        card.suit.sf
+                        Spacer()
+                        Text("\(card.value.cardValue)")
                     }
                 }
+                
             }
         }
+        .navigationBarTitle("Deck View")
     }
 }
 
