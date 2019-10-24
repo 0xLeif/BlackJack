@@ -1,7 +1,7 @@
 # BlackJack
 
 ## Deck View
-![DeckView][assets/deckView]
+![DeckView](assets/deckView.png)
 
 ## Card View
-![CardView][assets/cardView.png]
+![CardView](assets/cardView.png)
