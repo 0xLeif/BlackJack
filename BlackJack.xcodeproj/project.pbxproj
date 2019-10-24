@@ -14,6 +14,7 @@
 		29CEB86D2361266E00311134 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29CEB86C2361266E00311134 /* Preview Assets.xcassets */; };
 		29CEB8702361266E00311134 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29CEB86E2361266E00311134 /* LaunchScreen.storyboard */; };
 		29CEB87E2361451800311134 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CEB87D2361451800311134 /* CardView.swift */; };
+		29CEB880236149E700311134 /* DeckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CEB87F236149E700311134 /* DeckView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		29CEB86F2361266E00311134 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29CEB8712361266E00311134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29CEB87D2361451800311134 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		29CEB87F236149E700311134 /* DeckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				29CEB8712361266E00311134 /* Info.plist */,
 				29CEB86B2361266E00311134 /* Preview Content */,
 				29CEB87D2361451800311134 /* CardView.swift */,
+				29CEB87F236149E700311134 /* DeckView.swift */,
 			);
 			path = BlackJack;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29CEB880236149E700311134 /* DeckView.swift in Sources */,
 				29CEB8642361266C00311134 /* AppDelegate.swift in Sources */,
 				29CEB8662361266C00311134 /* SceneDelegate.swift in Sources */,
 				29CEB87E2361451800311134 /* CardView.swift in Sources */,

@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-enum CardSuit: String {
+enum CardSuit: String, CaseIterable {
     case heart
     case diamond
     case spade
@@ -25,18 +25,9 @@ enum CardValue {
     case jack
     case queen
     case king
-}
-
-struct Card {
-    let suit: CardSuit
-    let value: CardValue
-}
-
-struct CardView: View {
-    let card: Card
     
     var cardValue: String {
-        switch card.value {
+        switch self {
         case .ace:
             return "\(1)"
         case .number(let value):
@@ -45,6 +36,19 @@ struct CardView: View {
             return "\(10)"
         }
     }
+}
+
+struct Card: Identifiable {
+    var id: UUID = UUID()
+    
+    let suit: CardSuit
+    let value: CardValue
+}
+
+struct CardView: View {
+    let card: Card
+    
+    
     
     var body: some View {
         VStack {
@@ -54,7 +58,7 @@ struct CardView: View {
                 Spacer()
             }
             Spacer()
-            Text(self.cardValue)
+            Text(card.value.cardValue)
                 .font(.largeTitle)
             Spacer()
             HStack {
