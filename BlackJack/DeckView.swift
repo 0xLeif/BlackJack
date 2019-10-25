@@ -44,14 +44,13 @@ struct DeckView: View {
             ZStack {
                 ForEach((0 ..< self.deck.cards.count), id: \.self) { cardIndex in
                     CardView(card: self.deck.cards[cardIndex])
-//                        .frame(width: 80, height: 140, alignment: .center)
                         .rotationEffect(.init(degrees: Double(cardIndex) * self.angle), anchor: .bottomTrailing)
-                        .animation(.easeInOut(duration: 3))
+                        .animation(.easeInOut(duration: 10))
                     
                 }
             }
             Spacer()
-            Slider(value: $angle, in: (0 ... 90))
+            Slider(value: $angle, in: (0 ... 180))
         }
     .padding()
         .navigationBarTitle("Deck View")
