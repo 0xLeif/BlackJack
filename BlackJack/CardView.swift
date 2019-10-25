@@ -68,7 +68,7 @@ struct CardView: View {
             }
         }
         .padding()
-        .background(Color.white.shadow(radius: 9))
+        .background(Color.white.shadow(radius: 3))
     
     }
 }

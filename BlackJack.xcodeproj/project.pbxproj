@@ -18,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		290A532623626B7900D0FBB5 /* BlackJack.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BlackJack.entitlements; sourceTree = "<group>"; };
 		29CEB8602361266C00311134 /* BlackJack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlackJack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29CEB8632361266C00311134 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29CEB8652361266C00311134 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +61,7 @@
 		29CEB8622361266C00311134 /* BlackJack */ = {
 			isa = PBXGroup;
 			children = (
+				290A532623626B7900D0FBB5 /* BlackJack.entitlements */,
 				29CEB8632361266C00311134 /* AppDelegate.swift */,
 				29CEB8652361266C00311134 /* SceneDelegate.swift */,
 				29CEB8672361266C00311134 /* ContentView.swift */,
@@ -292,7 +294,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BlackJack/BlackJack.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"BlackJack/Preview Content\"";
 				DEVELOPMENT_TEAM = 8M8SAX62V2;
 				ENABLE_PREVIEWS = YES;
@@ -303,6 +307,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ol.BlackJack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -312,7 +317,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BlackJack/BlackJack.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"BlackJack/Preview Content\"";
 				DEVELOPMENT_TEAM = 8M8SAX62V2;
 				ENABLE_PREVIEWS = YES;
@@ -323,6 +330,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ol.BlackJack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

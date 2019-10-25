@@ -36,19 +36,24 @@ struct Deck {
 
 struct DeckView: View {
     let deck = Deck()
+    @State private var angle: Double = 0
+    
     var body: some View {
-        List {
-            ForEach(self.deck.cards) { card in
-                NavigationLink(destination: CardView(card: card)) {
-                    HStack {
-                        card.suit.sf
-                        Spacer()
-                        Text("\(card.value.cardValue)")
-                    }
+        VStack {
+            Spacer()
+            ZStack {
+                ForEach((0 ..< self.deck.cards.count), id: \.self) { cardIndex in
+                    CardView(card: self.deck.cards[cardIndex])
+                        .frame(width: 20, height: 35, alignment: .center)
+                        .rotationEffect(.init(degrees: Double(cardIndex) * self.angle), anchor: .bottomTrailing)
+                        .animation(.easeInOut(duration: 3))
+                    
                 }
-                
             }
+            Spacer()
+            Slider(value: $angle, in: (0 ... 90))
         }
+    .padding()
         .navigationBarTitle("Deck View")
     }
 }
