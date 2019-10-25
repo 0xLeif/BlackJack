@@ -32,8 +32,12 @@ enum CardValue {
             return "\(1)"
         case .number(let value):
             return "\(value)"
-        case .jack, .queen, .king:
-            return "\(10)"
+        case .jack:
+             return "J"
+        case .queen:
+            return "Q"
+        case .king:
+            return "K"
         }
     }
 }
@@ -67,6 +71,7 @@ struct CardView: View {
                     .font(.largeTitle)
             }
         }
+        .frame(width: 80, height: 140, alignment: .center)
         .padding()
         .background(Color.white.shadow(radius: 3))
     
